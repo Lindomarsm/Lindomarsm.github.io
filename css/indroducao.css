@@ -1,0 +1,101 @@
+
+/*
+div {
+    
+    font-size: 1rem;
+    line-height: 1.125;
+    
+    text-align: right;
+    
+}
+
+.main-introducao{
+    position: relative;
+}
+
+.main-introducao h2::before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url(../img/code_FILL0_wght400_GRAD0_opsz48.svg) no-repeat center;
+    position: absolute;
+    top: -15px;
+    left: -40px;
+    z-index: -1;
+}
+ 
+*/
+.main-introducao{
+    max-width: 1000px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    gap: 100px; 
+    align-items: center;
+   
+
+}
+
+.main-introducao h2{
+    font-size: 4.5rem;
+    line-height: 1.125;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+.main-introducao h2::before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url(../img/code_FILL0_wght400_GRAD0_opsz48.svg) no-repeat center;
+    position: relative;
+    top:68px;
+    left: -85px;
+    z-index: -1;
+   background-color: #348bfd;
+   border-radius: 5px;
+   
+}
+
+.main-introducao p{
+    font-size: 1.5rem;
+    color: #525252;
+}
+
+@media (max-width: 1000px) {
+    .main-introducao h2{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:800px){
+    .main-introducao{
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .main-introducao h2{
+        font-size: 2rem;
+
+    }
+
+    .main-introducao h2::before{
+        width: 50px;
+    }
+
+}
+
+@media (max-width:400px){
+    .main-introducao{
+        grid-template-columns: 1fr;
+    }
+    .main-introducao img
+{
+    display: none;
+
+}
+}
